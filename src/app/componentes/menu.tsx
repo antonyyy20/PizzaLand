@@ -1,5 +1,6 @@
 import { FaHeart } from "react-icons/fa";
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function Menu() {
   return (
@@ -40,6 +41,7 @@ export default function Menu() {
             </div>
             <div className="w-3/5">
               <div className="w-full">
+              <Link href="/personalizacion">
                 <Image
                   src="/placeholder.svg?height=100&width=100"
                   alt="Hawaiana"
@@ -47,6 +49,7 @@ export default function Menu() {
                   height={100}
                   className="w-full h-full object-cover bg-gray-200"
                 />
+                </Link>
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
@@ -71,6 +74,7 @@ export default function Menu() {
           <div className="flex gap-4 justify-between">
             <div className="w-3/5">
               <div className="w-full">
+                <Link href="/personalizacion">
                 <Image
                   src="/placeholder.svg?height=100&width=100"
                   alt="Cuatro Quesos"
@@ -78,6 +82,7 @@ export default function Menu() {
                   height={100}
                   className="w-full h-full object-cover bg-gray-200"
                 />
+                </Link>
               </div>
               <div className="mt-4 flex justify-between">
                 <div>

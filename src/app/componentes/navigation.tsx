@@ -15,7 +15,7 @@ export default function Navigation() {
           <span className="text-xs mt-1">Home</span>
         </Link>
         
-        <Link href="/orders" className="flex flex-col items-center text-[rgb(123,21,5)]">
+        <Link href="/ordenes" className="flex flex-col items-center text-[rgb(123,21,5)]">
           <RiShoppingBag2Fill className="w-6 h-6" />
           <span className="text-xs mt-1">Orders</span>
         </Link>

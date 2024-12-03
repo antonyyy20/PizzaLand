@@ -1,62 +1,86 @@
-"use client";
+import { PhoneCall } from 'lucide-react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 
-import { CiClock2 } from "react-icons/ci";
-import { FiPhone } from "react-icons/fi";
-
-export default function Support() {
+export default function SupportPage() {
   return (
-    <section className="px-4 py-6 space-y-4 mb-52">
-      <h2 className="section-title">Soporte</h2>
-      
-      {/* Delivery Time */}
-      <div className="bg-gray-100 p-4 rounded-lg flex items-center gap-3">
-        <CiClock2 className="w-6 h-6 text-[rgb(123,21,5)]" />
-        <div>
-          <p className="text-sm font-medium">30 min</p>
-          <p className="text-xs text-gray-600">tiempo estimado de entrega</p>
-        </div>
+    <Card className="w-full max-w-md mx-auto">
+      <div className="relative">
+        <div className="h-2 bg-[#800000] shadow-md" />
+        <h1 className="text-center text-2xl font-normal py-2">Soporte</h1>
+        <div className="h-2 bg-[#800000] shadow-md" />
       </div>
       
-      {/* Customer Service */}
-      <div className="bg-gray-100 p-4 rounded-lg flex items-center gap-3">
-        <FiPhone className="w-6 h-6 text-[rgb(123,21,5)]" />
-        <div>
-          <p className="text-sm font-medium">270-6767</p>
-          <p className="text-xs text-gray-600">linea deatención al cliente</p>
+      <CardContent className="p-4 space-y-4">
+        <div className="bg-gray-100 p-3 rounded-md flex items-center gap-2">
+          <PhoneCall className="h-4 w-4" />
+          <div className="text-sm">
+            <div>970-6767</div>
+            <div className="text-gray-600">línea de atención al cliente</div>
+          </div>
         </div>
-      </div>
-      
-      {/* Cancel Order Button */}
-      <button 
-        className="w-full border-2 border-[rgb(123,21,5)] text-[rgb(123,21,5)] hover:bg-[rgb(123,21,5)] hover:text-white">
-        Cancelar Pedido
-      </button>
 
-      <div className="join join-vertical w-full">
-  <div className="collapse collapse-arrow border-b-2 border-solid border-black rounded-none">
-    <input type="radio" name="my-accordion-4" defaultChecked />
-    <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div className="collapse-content border-2 border-b-0 border-black">
-      <p>hello</p>
-    </div>
-  </div>
-  <div className="collapse collapse-arrow border-b-2 border-solid border-black rounded-none">
-    <input type="radio" name="my-accordion-4" />
-    <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div className="collapse-content border-2 border-b-0 border-black">
-      <p>hello</p>
-    </div>
-  </div>
-  <div className="collapse collapse-arrow   border-b-2 border-solid border-black rounded-none">
-    <input type="radio" name="my-accordion-4" />
-    <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div className="collapse-content border-2 border-b-0 border-black">
-      <p>hello</p>
-    </div>
-  </div>
-</div>
-  
-    
-    </section>
-  );
+        <Button variant="outline" className="w-full border-gray-300">
+          Cancelar Pedido
+        </Button>
+
+        <Accordion type="single" collapsible className="w-full space-y-2">
+          <AccordionItem value="item-1" className="border-b">
+            <AccordionTrigger>Confirmacion de compra</AccordionTrigger>
+            <AccordionContent>
+              Información sobre la confirmación de su compra.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-2" className="border-b">
+            <AccordionTrigger>Seguimiento de mi pedido</AccordionTrigger>
+            <AccordionContent>
+              Detalles sobre el seguimiento de su pedido.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-3" className="border-b">
+            <AccordionTrigger>Ingrese una dirección incorrecta</AccordionTrigger>
+            <AccordionContent>
+              Ayuda para corregir una dirección incorrecta.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4" className="border-b">
+            <AccordionTrigger>El local se encuentra cerrado</AccordionTrigger>
+            <AccordionContent>
+              Información sobre locales cerrados.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-5" className="border-b">
+            <AccordionTrigger>Mi pedido no llego bien</AccordionTrigger>
+            <AccordionContent>
+              Asistencia para problemas con su pedido.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-6" className="border-b">
+            <AccordionTrigger>Cancelación de pedido</AccordionTrigger>
+            <AccordionContent>
+              Proceso para cancelar su pedido.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-7" className="border-b">
+            <AccordionTrigger>Problemas con pagos</AccordionTrigger>
+            <AccordionContent>
+              Ayuda con problemas de pago.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </CardContent>
+    </Card>
+  )
 }
