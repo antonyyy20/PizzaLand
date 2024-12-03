@@ -2,11 +2,11 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 
-export default function Component() {
+
+export default function Pedido() {
   return (
-    <Card className="w-full max-w-2xl mx-auto">
+    <Card className="w-[428px] h-[926px]">
       <CardHeader>
         <CardTitle className="text-xl">Personalización del Pedido</CardTitle>
       </CardHeader>
@@ -14,6 +14,7 @@ export default function Component() {
         {/* Base Selection */}
         <div className="space-y-4">
           <h3 className="font-semibold">Selección de Base</h3>
+          <div className="w-full h-1 bg-red-900 my-5"></div>
           <div className="grid grid-cols-3 gap-6">
             <div className="space-y-4">
               <Label className="font-medium">Masa</Label>
@@ -63,6 +64,10 @@ export default function Component() {
                   <Label htmlFor="mediana">Mediana 12 pulgadas</Label>
                 </div>
                 <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="grande" id="grande" />
+                  <Label htmlFor="mediana">Grande 14 pulgadas</Label>
+                </div>
+                <div className="flex items-center space-x-2">
                   <RadioGroupItem value="familiar" id="familiar" />
                   <Label htmlFor="familiar">Familiar 18 pulgadas</Label>
                 </div>
@@ -71,48 +76,66 @@ export default function Component() {
           </div>
         </div>
 
-        <Separator />
+        
 
         {/* Sauce Selection */}
         <div className="space-y-4">
           <h3 className="font-semibold">Selección de Salsa</h3>
+          <div className="w-full h-1 bg-red-900 my-5"></div>
           <div className="grid grid-cols-2 gap-6">
+              
             <div className="space-y-4">
               <Label className="font-medium">Salsa</Label>
-              <div className="space-y-2">
+              <RadioGroup defaultValue="clasica">
                 <div className="flex items-center space-x-2">
-                  <Checkbox id="salsa-tomate" />
-                  <Label htmlFor="salsa-tomate">Salsa de Tomate</Label>
+                  <RadioGroupItem value="clasica" id="clasica" />
+                  <Label htmlFor="clasica">Salsa de Tomate</Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Checkbox id="salsa-blanca" />
-                  <Label htmlFor="salsa-blanca">Salsa Blanca</Label>
+                  <RadioGroupItem value="integral" id="integral" />
+                  <Label htmlFor="integral">Salsa Blanca</Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Checkbox id="pesto" />
-                  <Label htmlFor="pesto">Pesto</Label>
+                  <RadioGroupItem value="sin-gluten" id="sin-gluten" />
+                  <Label htmlFor="sin-gluten">Pesto</Label>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Checkbox id="salsa-bbq" />
-                  <Label htmlFor="salsa-bbq">Salsa BBQ</Label>
+                  <RadioGroupItem value="sin-gluten" id="sin-gluten" />
+                  <Label htmlFor="sin-gluten">Salsa BBQ</Label>
                 </div>
-              </div>
+              </RadioGroup>
             </div>
-
+  
             <div className="space-y-4">
               <Label className="font-medium">Salsas Extra</Label>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <Checkbox id="ranch" />
-                  <Label htmlFor="ranch">Ranch</Label>
+                  <Label htmlFor="ranch">Pesto</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="ajo-parmesano" />
-                  <Label htmlFor="ajo-parmesano">Ajo Parmesano</Label>
+                  <Label htmlFor="ajo-parmesano">Salsa Blanca</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="barbacoa" />
-                  <Label htmlFor="barbacoa">Barbacoa</Label>
+                  <Label htmlFor="barbacoa">Ajo Parmesano</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="chili-honey" />
+                  <Label htmlFor="chili-honey">Salsa de la casa</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="chili-honey" />
+                  <Label htmlFor="chili-honey">Ranch</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="chili-honey" />
+                  <Label htmlFor="chili-honey">Picante</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox id="chili-honey" />
+                  <Label htmlFor="chili-honey">Barbacoa</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="chili-honey" />
@@ -120,14 +143,16 @@ export default function Component() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <Separator />
+            </div>
+
+          </div>
 
         {/* Cheese Selection */}
         <div className="space-y-4">
           <h3 className="font-semibold">Selección de Queso</h3>
+          <div className="w-full h-1 bg-red-900 my-5"></div>
+          <p>Queso</p>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
               <Checkbox id="mozzarella" />

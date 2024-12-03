@@ -14,7 +14,7 @@ export default function Header() {
     };
 
   return (
-    <header className="flex items-center justify-between p-4 border-b border-[rgb(123,21,5)]">
+    <header className="fixed top-0 left-0 z-50 w-[428px] flex items-center justify-between p-4 border-b border-[rgb(123,21,5)] bg-white">
       <button className="p-2" onClick={toggleMobileMenu} >
         <TfiMenuAlt className="w-6 h-6 text-[rgb(123,21,5)]"/>
       </button>

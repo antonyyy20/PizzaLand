@@ -25,7 +25,7 @@ export default function Navigation() {
           <span className="text-xs mt-1">Menu</span>
         </Link>
         
-        <Link href="/profile" className="flex flex-col items-center text-[rgb(123,21,5)]">
+        <Link href="/perfil" className="flex flex-col items-center text-[rgb(123,21,5)]">
           <FaUser className="w-6 h-6" />
           <span className="text-xs mt-1">Profile</span>
         </Link>

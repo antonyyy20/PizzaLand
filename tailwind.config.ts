@@ -11,14 +11,16 @@ export default {
   	extend: {
   		colors: {
   			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
+  			foreground: 'var(--foreground)',
+			customGreen: "rgb(4 52 36)",
+			customRed: "rgb(123 21 5)",
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 } satisfies Config;
