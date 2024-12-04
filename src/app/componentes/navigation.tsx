@@ -10,7 +10,7 @@ export default function Navigation() {
   return (
     <nav className="fixed bottom-0 left-0 right-0 max-w-[428px] mx-auto bg-white border-t border-[rgb(123,21,5)]">
       <div className="flex justify-around py-3">
-        <Link href="/" className="flex flex-col items-center text-[rgb(123,21,5)]">
+        <Link href="/principal" className="flex flex-col items-center text-[rgb(123,21,5)]">
           <IoMdHome className="w-6 h-6" />
           <span className="text-xs mt-1">Home</span>
         </Link>

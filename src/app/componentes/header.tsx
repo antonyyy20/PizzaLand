@@ -30,7 +30,7 @@ export default function Header() {
         </nav>
       
       <div className="w-12 h-12 relative">
-        <Link href="/">
+        <Link href="/principal">
         <Image
           src="/logo.png"
           alt="Restaurant Logo"
