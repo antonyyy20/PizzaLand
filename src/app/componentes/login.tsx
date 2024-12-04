@@ -47,7 +47,7 @@ export default function Login() {
                 <button
                     type="submit"
                     className="auth-button border w-1/2 p-4 rounded-full bg-customRed text-white border-1 border-black shadow-lg shadow-black">
-                    Ingresar
+                    <Link href="/principal">Ingresar</Link>
                 </button>
             </div>
           </form>
@@ -57,8 +57,8 @@ export default function Login() {
                 ¿Olvidaste tu contraseña?
             </Link>
 
-            <p className='mt-5'>¿No tienes una cuenta?</p>
-            <Link href="/" className="auth-link text-customRed">
+            <p className='mt-5'><Link href="/registro">¿No tienes una cuenta?</Link></p>
+            <Link href="/registro1" className="auth-link text-customRed">
               Crear una cuenta
             </Link>
 

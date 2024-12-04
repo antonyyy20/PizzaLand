@@ -1,6 +1,6 @@
 'use client';
+import Link from "next/link";
 import { FaTrash } from "react-icons/fa";
-
 export default function SelectTarjeta(){
     return(
         <div className="p-4 w-[428px] h-[926px] ">
@@ -29,7 +29,7 @@ export default function SelectTarjeta(){
 
         {/* Add Card Button */}
         <button className="w-full bg-[#0B3B2D] text-white py-3 rounded-lg mt-6 hover:bg-[#0d4836] transition-colors">
-          Agregar Tarjeta
+          <Link href="/agregarTargeta">Agregar Tarjeta</Link>
         </button>
       </div>
     )

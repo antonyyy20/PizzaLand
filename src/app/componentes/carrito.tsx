@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-
+import Link from "next/link";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaWalking } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
@@ -111,7 +111,7 @@ export default function Cart() {
         </div>
         <div className="w-full h-1 bg-red-900 my-5"></div>
         <div className="flex justify-center">
-            <button className="btn btn-active rounded-none bg-customRed p-3 w-2/5 text-white ">Ir a pagar</button>
+            <button className="btn btn-active rounded-none bg-customRed p-3 w-2/5 text-white "><Link href="/detalleCompra">Ir a pagar</Link></button>
         </div>
     </div>
   );

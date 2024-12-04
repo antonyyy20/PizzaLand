@@ -9,7 +9,7 @@ import { PiCalendarStarFill } from "react-icons/pi";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { BiSolidDiscount } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
-
+import Link from "next/link";
 export default function Perfil() {
   return (
     <main className="min-h-screen bg-gray-50 w-full max-w-[428px] mx-auto">
@@ -45,18 +45,18 @@ export default function Perfil() {
       <div className="mt-4">
         <div className="bg-white">
           <h2 className="px-6 py-3 text-sm font-semibold text-gray-600">Perfil</h2>
-          <MenuLink icon={<PiCalendarStarFill className="w-5 h-5" />} text="Historial de Pedidos" />
-          <MenuLink icon={<FaHeart className="w-5 h-5" />} text="Favoritos" />
-          <MenuLink icon={<IoLocationOutline className="w-5 h-5" />} text="Direcciones" />
-          <MenuLink icon={<BiMoneyWithdraw className="w-5 h-5" />} text="Métodos de Pago" />
+          <Link href="/historial"><MenuLink icon={<PiCalendarStarFill className="w-5 h-5" />} text="Historial de Pedidos" /></Link>
+          <Link href="/favoritos"><MenuLink icon={<FaHeart className="w-5 h-5" />} text="Favoritos" /></Link>
+          <Link href="/"><MenuLink icon={<IoLocationOutline className="w-5 h-5" />} text="Direcciones" /></Link>
+          <Link href="/detalleCompra"><MenuLink icon={<BiMoneyWithdraw className="w-5 h-5" />} text="Métodos de Pago" /></Link>
         </div>
 
         <div className="bg-white mt-4">
           <h2 className="px-6 py-3 text-sm font-semibold text-gray-600">Configuración</h2>
-          <MenuLink icon={<GoBellFill className="w-5 h-5" />} text="Notificaciones" />
+          <Link href="/notificaciones"><MenuLink icon={<GoBellFill className="w-5 h-5" />} text="Notificaciones" /></Link>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full px-6 pb-4">
+        <div className="relative ">
             <button className="flex items-center gap-2 text-red-600 font-medium">
             <IoExitOutline className="w-5 h-5" />
             <span>Cerrar Sesión</span>

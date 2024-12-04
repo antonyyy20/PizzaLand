@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 
 
 
@@ -49,7 +51,7 @@ export default function AddTarjeta() {
                   <button
                       type="submit"
                       className="auth-button border w-1/2 p-4 bg-customRed text-white">
-                      Guardar
+                      <Link href="/detalleCompra">Guardar</Link>
                   </button>
               </div>
             </form>

@@ -68,7 +68,7 @@ export default function Register() {
                 <button
                     type="submit"
                     className="auth-button border w-1/2 p-4 rounded-full bg-customRed text-white border-1 border-black shadow-lg shadow-black">
-                    Continuar
+                   <Link href="/login"> Continuar</Link>
                 </button>
             </div>
           </form>
