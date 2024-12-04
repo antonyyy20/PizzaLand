@@ -8,6 +8,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import Link from "next/link";
+
 
 interface OrderDetails {
   id: string
@@ -41,7 +44,7 @@ const orders: OrderDetails[] = [
     paymentMethod: "Tarjeta de crédito",
     total: 14.99,
     address: "Calle 123, Ciudad Panamá",
-    image: "/placeholder.svg?height=80&width=80"
+    image: "https://th.bing.com/th/id/R.441a935a4ee5e7dda8e3c623e32dfdfb?rik=8rcyvdsjqmKCaw&pid=ImgRaw&r=0"
   },
   {
     id: "2",
@@ -57,7 +60,7 @@ const orders: OrderDetails[] = [
     paymentMethod: "Tarjeta de crédito",
     total: 22.50,
     address: "Calle 456, Ciudad Panamá",
-    image: "/placeholder.svg?height=80&width=80"
+    image: "https://3.bp.blogspot.com/-n2FRFhqNC5A/Vwz_V5HscII/AAAAAAAAATc/XOoWQlLjt48homat_zAw8j2MigHXymZLACLcB/s1600/01.jpg"
   },
   {
     id: "3",
@@ -73,7 +76,7 @@ const orders: OrderDetails[] = [
     paymentMethod: "Efectivo",
     total: 19.99,
     address: "Calle 02, Ciudad Panamá",
-    image: "/placeholder.svg?height=80&width=80"
+    image: "https://3.bp.blogspot.com/-n2FRFhqNC5A/Vwz_V5HscII/AAAAAAAAATc/XOoWQlLjt48homat_zAw8j2MigHXymZLACLcB/s1600/01.jpg"
   }
 ]
 
@@ -99,8 +102,10 @@ export default function OrderHistory() {
         <div className="bg-[#990000] text-white p-4 mb-8">
           <div className="flex  justify-center items-center gap-2">
           <div className="flex justify-between items-center w-full">
-            <button><SlArrowLeft /></button>
-            <div className=" relative mx-auto">
+              <Link href="/perfil">
+              <button><SlArrowLeft /></button>
+              </Link>
+              <div className=" relative mx-auto">
             <h1 className="text-2xl font-bold text-center">Historial de Pedidos</h1> 
             </div>
             </div>
@@ -120,9 +125,11 @@ export default function OrderHistory() {
             >
               <AccordionTrigger className="p-4 hover:no-underline [&[data-state=open]>div>div>.chevron]:rotate-180 bg-[#990000] text-white">
                 <div className="flex items-center gap-4 w-full">
-                  <img
+                  <Image
                     src={order.image}
                     alt={order.name}
+                    width={100}
+                    height={100}
                     className="w-24 h-24 rounded object-cover"
                   />
                   <div className="flex-1 text-left">
@@ -131,7 +138,6 @@ export default function OrderHistory() {
                       {renderStars(order.rating)}
                     </div>
                   </div>
-                  <ChevronDown className="chevron w-5 h-5 transition-transform duration-200" />
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 py-3 bg-[#990000] text-white">

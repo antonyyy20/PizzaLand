@@ -2,6 +2,8 @@
 
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
+import Image from "next/image"
+import Link from "next/link"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -33,7 +35,7 @@ export default function FavoritesPage() {
       id: 1,
       name: "Pizza Familiar",
       price: 229.50,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "https://3.bp.blogspot.com/-n2FRFhqNC5A/Vwz_V5HscII/AAAAAAAAATc/XOoWQlLjt48homat_zAw8j2MigHXymZLACLcB/s1600/01.jpg",
       isFavorite: true,
       rating: 5,
       description: "Nuestra pizza familiar perfecta para compartir",
@@ -43,7 +45,7 @@ export default function FavoritesPage() {
       id: 2,
       name: "Pizza Pollo BBQ",
       price: 189.50,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg",
       isFavorite: true,
       rating: 4,
       description: "Deliciosa pizza con pollo y salsa BBQ",
@@ -53,7 +55,7 @@ export default function FavoritesPage() {
       id: 3,
       name: "Super Combo",
       price: 299.50,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGllclpS2n1QTKvbfMPLUkWGI8fSAbO-tpcw&s",
       isFavorite: true,
       rating: 5,
       description: "El mejor combo para toda la familia",
@@ -74,12 +76,12 @@ export default function FavoritesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="pt-10 min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-[#8B0000] text-white p-4 flex items-center gap-3">
-        <button className="p-1">
+        <Link href="/perfil">
           <ChevronLeft className="w-5 h-5" />
-        </button>
+        </Link>
         <h1 className="text-lg font-medium">Favoritos</h1>
       </header>
 
@@ -100,10 +102,12 @@ export default function FavoritesPage() {
                 >
                   <CollapsibleTrigger className="w-full">
                     <div className="flex items-center">
-                      <img
+                      <Image
                         src={product.image}
                         alt={product.name}
-                        className="w-32 h-32 object-cover"
+                        width={100}
+                        height={100}
+                        className="object-cover"
                       />
                       <div className="flex-1 p-4 flex justify-between items-start">
                         <div>

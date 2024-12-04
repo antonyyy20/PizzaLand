@@ -9,7 +9,6 @@ export default function NotificationsSettings() {
           <i className="fas fa-bars"></i> {/* Ícono de menú */}
         </button>
         <div className="text-center">
-          <img src="/logo.png" alt="Logo" className="h-10" /> {/* Agrega tu logo */}
         </div>
         <button className="text-2xl">
           <i className="fas fa-shopping-cart"></i> {/* Ícono de carrito */}
