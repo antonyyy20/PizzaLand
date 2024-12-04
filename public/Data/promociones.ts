@@ -31,7 +31,7 @@ export const promociones: promociones[] = [
         nombre: "CINCUENTA PORCIENTO DE DESCUENTO EN PIZZAS SELECCIONADAS",
         description: "",
         price: 9.99,
-        imagen: '/50% descuento pizza.jpg',
+        imagen: '/CincuentaDescuento.jpg',
         estrellas: '★★★★★'
   },
    ];
