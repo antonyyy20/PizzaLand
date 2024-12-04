@@ -10,9 +10,8 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function SupportPage() {
   return (
-    <Card className="w-full max-w-md mx-auto">
+    <Card className="pt-5 w-full max-w-md mx-auto">
       <div className="relative">
-        <div className="h-2 bg-[#800000] shadow-md" />
         <h1 className="text-center text-2xl font-normal py-2">Soporte</h1>
         <div className="h-2 bg-[#800000] shadow-md" />
       </div>
@@ -34,49 +33,52 @@ export default function SupportPage() {
           <AccordionItem value="item-1" className="border-b">
             <AccordionTrigger>Confirmacion de compra</AccordionTrigger>
             <AccordionContent>
-              Información sobre la confirmación de su compra.
+              Recibirás una confirmación de compra por correo y en la app. Si no la ves, contacta al Call Center (270-6768) para asistencia.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-2" className="border-b">
             <AccordionTrigger>Seguimiento de mi pedido</AccordionTrigger>
             <AccordionContent>
-              Detalles sobre el seguimiento de su pedido.
+            Desde el Menú, Mis Pedidos, seleccionando la opción Pedidos en Curso, puedes seguir en tiempo real el estado del mismo, o también hacer clic en el link que figura en el email de confirmación de pedido recibido.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3" className="border-b">
             <AccordionTrigger>Ingrese una dirección incorrecta</AccordionTrigger>
             <AccordionContent>
-              Ayuda para corregir una dirección incorrecta.
+            Cancela tu pedido rápidamente desde el botón Cancelar pedido en la pantalla de confirmación.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-4" className="border-b">
             <AccordionTrigger>El local se encuentra cerrado</AccordionTrigger>
             <AccordionContent>
-              Información sobre locales cerrados.
+            Si el restaurante elegido estaba cerrado, llama al Call Center (270-6768) para recibir una solución personalizada.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-5" className="border-b">
             <AccordionTrigger>Mi pedido no llego bien</AccordionTrigger>
             <AccordionContent>
-              Asistencia para problemas con su pedido.
+            Llama al Call Center (270-6768) si tu pedido llegó frío, incompleto o tuviste algún inconveniente.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-6" className="border-b">
             <AccordionTrigger>Cancelación de pedido</AccordionTrigger>
             <AccordionContent>
-              Proceso para cancelar su pedido.
+            Si el pedido no fue preparado, cancélalo desde el botón Cancelar pedido. Si ya está en proceso, llama al Call Center (270-6768).
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-7" className="border-b">
             <AccordionTrigger>Problemas con pagos</AccordionTrigger>
             <AccordionContent>
-              Ayuda con problemas de pago.
+              Si tienes problemas con el pago:
+              Revisa que tu tarjeta tenga fondos y los datos sean correctos.
+              Prueba otro método de pago si el problema continúa.
+              Si persiste, llama al Call Center (270-6768) para ayuda personalizada.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
