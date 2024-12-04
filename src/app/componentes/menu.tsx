@@ -22,7 +22,7 @@ export default function Menu() {
             <div className="w-3/5">
               <div className="w-full">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2-500x500.jpg"
                   alt="Pepperoni"
                   width={100}
                   height={100}
@@ -43,7 +43,7 @@ export default function Menu() {
               <div className="w-full">
               <Link href="/personalizacion">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://www.sazonpapudo.cl/cdn/shop/files/como-hacer-pizza-hawaiana.jpg?v=1705543638&width=2048"
                   alt="Hawaiana"
                   width={100}
                   height={100}
@@ -76,7 +76,7 @@ export default function Menu() {
               <div className="w-full">
                 <Link href="/personalizacion">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://valledearas.com/wordpress/wp-content/uploads/2023/01/pizza-4-quesos.jpg"
                   alt="Cuatro Quesos"
                   width={100}
                   height={100}
@@ -97,7 +97,7 @@ export default function Menu() {
             <div className="w-3/5">
               <div className="w-full">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg"
                   alt="BBQ Pollo"
                   width={100}
                   height={100}
