@@ -23,13 +23,14 @@ export default function Header() {
         md:translate-x-0 bg-white flex-col pl-4 md:pl-0 pt-8 md:pt-0 pb-80 md:pb-0 text-base md:text-sm md:flex-row w-[90%] md:w-fit md:top-0 top-16 flex md:relative absolute md:space-x-4 space-y-3 md:space-y-0`}>
           <Link href="/menu" className="text-gray-700 hover:text-black hover:underline">Menu</Link>
           <Link href="/" className="text-gray-700 hover:text-black hover:underline">Dirreciones</Link>
-          <Link href="/new-arrivals" className="text-gray-700 hover:text-black hover:underline">Historial de pedidos</Link>
-          <Link href="/new-arrivals" className="text-gray-700 hover:text-black hover:underline">Favoritos</Link>
+          <Link href="/historial" className="text-gray-700 hover:text-black hover:underline">Historial de pedidos</Link>
+          <Link href="/favoritos" className="text-gray-700 hover:text-black hover:underline">Favoritos</Link>
           <Link href="/new-arrivals" className="text-gray-700 hover:text-black hover:underline">Configuraciones</Link>
-          <Link href="/new-arrivals" className="text-gray-700 hover:text-black hover:underline">Soporte</Link>
+          <Link href="/soporte" className="text-gray-700 hover:text-black hover:underline">Soporte</Link>
         </nav>
       
       <div className="w-12 h-12 relative">
+        <Link href="/">
         <Image
           src="/logo.png"
           alt="Restaurant Logo"
@@ -37,10 +38,13 @@ export default function Header() {
           className="object-contain"
           priority
         />
+        </Link>
       </div>
       
       <button className="p-2">
+        <Link href="/carrito">
         <MdOutlineShoppingCart className="w-6 h-6 text-[rgb(123,21,5)]" />
+        </Link>
       </button>
     </header>
   );
