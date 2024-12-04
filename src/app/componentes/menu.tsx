@@ -21,6 +21,7 @@ export default function Menu() {
           <div className="flex gap-4 justify-between">
             <div className="w-3/5">
               <div className="w-full">
+              <Link href="/personalizacion">
                 <Image
                   src="https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2-500x500.jpg"
                   alt="Pepperoni"
@@ -28,6 +29,7 @@ export default function Menu() {
                   height={100}
                   className="w-full h-full object-cover bg-gray-200"
                 />
+                </Link>
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
@@ -96,6 +98,7 @@ export default function Menu() {
             </div>
             <div className="w-3/5">
               <div className="w-full">
+                <Link href="/personalizacion">
                 <Image
                   src="https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg"
                   alt="BBQ Pollo"
@@ -103,6 +106,7 @@ export default function Menu() {
                   height={100}
                   className="w-full h-full object-cover bg-gray-200"
                 />
+                </Link>
               </div>
               <div className="mt-4 flex justify-between">
                 <div>

@@ -239,7 +239,7 @@ export default function Pedido() {
       <Button 
         className="w-full bg-[#8B0000] hover:bg-[#660000]"
         onClick={() => console.log('Selected ingredients:', ingredients.filter(ing => ing.checked))}
-      >  <Link href="/ordenes">Ir al carrito</Link>
+      >  <Link href="/carrito">Ir al carrito</Link>
        
       </Button>
      
