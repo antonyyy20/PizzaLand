@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [compra, setCompra] = useState(1);
 
     const toggleMobileMenu = () => {
       setIsMobileMenuOpen((prevState) => !prevState);
@@ -41,7 +42,8 @@ export default function Header() {
         </Link>
       </div>
       
-      <button className="p-2">
+      <button className="p-2 flex">
+        <p>{compra}</p>
         <Link href="/carrito">
         <MdOutlineShoppingCart className="w-6 h-6 text-[rgb(123,21,5)]" />
         </Link>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CreditCard, User, Clock, MapPin, Terminal, Banknote, Tag } from 'lucide-react'
 import Link from "next/link"
+import useContador from "./estadoGlobal"
 
 export default function DeliveryDetails() {
   return (
@@ -75,7 +76,7 @@ export default function DeliveryDetails() {
       </Card>
 
       {/* Pay Button */}
-      <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+      <Button onClick={useContador} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
         Pagar
       </Button>
     </div>
