@@ -4,6 +4,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useState } from 'react'
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -233,7 +234,13 @@ export default function Pedido() {
 
       <div className="space-y-4">
         <h2 className="text-xl font-bold border-b pb-2">Visualización del Pedido</h2>
-        <div className="aspect-square bg-gray-100 rounded-lg"></div>
+        <Image
+          src="https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2-500x500.jpg"
+          alt="Pepperoni"
+          width={100}
+          height={100}
+          className="w-full h-full object-cover bg-gray-200"
+        />
       </div>
      
       <Button 
