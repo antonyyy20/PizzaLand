@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [compra, setCompra] = useState(1);
+    const [compra] = useState(1);
 
     const toggleMobileMenu = () => {
       setIsMobileMenuOpen((prevState) => !prevState);

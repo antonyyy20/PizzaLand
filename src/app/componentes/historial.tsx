@@ -1,6 +1,6 @@
 'use client'
 import { SlArrowLeft } from "react-icons/sl";
-import { Star, ChevronDown, ChevronUp, ArrowLeft } from 'lucide-react'
+import { Star } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,

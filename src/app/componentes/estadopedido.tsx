@@ -1,5 +1,4 @@
 "use client"
-import { Card } from "@/components/ui/card"
 import Image from "next/image"
 import { SlArrowLeft } from "react-icons/sl";
 import { Check } from 'lucide-react';
@@ -9,11 +8,7 @@ import { Check } from 'lucide-react';
 import { useState, useEffect, useRef } from "react"
 
 
-interface ProgressStepsProps {
-  currentStep: number;
-  steps: string[];
-  onStepClick: (stepIndex: number) => void;
-}
+
 
 export default function OrderTracker() {
     const [currentStep, setCurrentStep] = useState(0)

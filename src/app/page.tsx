@@ -1,7 +1,4 @@
 'use client'
-import Login from "./componentes/login";
-import Menu from "./componentes/menu";
-import Cart from "./componentes/carrito";
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
